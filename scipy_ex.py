@@ -1,6 +1,7 @@
 '''this is a scipy example, where we use curve fit to fit a curve and plot the results'''
 #lets play with scipy!
 import numpy as np
+import matplotlib as plt
 from scipy.optimize import curve_fit
 def func(x, a, b, c): 
     '''this returns an array (e^?) on x. 
