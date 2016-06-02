@@ -8,7 +8,7 @@ def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 xdata = np.linspace( 0, 4, 50)
 y = func(xdata, 2.5, 1.3, 0.5)
-data = y + 8.2 * np.random.normal(size=len(xdata))
+ydata = y + 8.2 * np.random.normal(size=len(xdata))
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata,ydata, marker='*')
 plt.plot(xdata, y)
